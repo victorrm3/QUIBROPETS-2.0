@@ -1,0 +1,46 @@
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.zed/
+.fleet/
+.nova/
+*.log
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Frontend (Next.js)
+quibro-remastered/node_modules/
+quibro-remastered/.next/
+quibro-remastered/out/
+quibro-remastered/.vercel/
+quibro-remastered/*.tsbuildinfo
+quibro-remastered/next-env.d.ts
+
+# Backend (Laravel)
+backend/vendor/
+backend/node_modules/
+backend/public/build/
+backend/public/hot/
+backend/public/storage
+backend/storage/*.key
+backend/storage/pail
+backend/storage/logs/*.log
+backend/bootstrap/cache/*.php
+!backend/bootstrap/cache/.gitignore
+backend/.phpunit.result.cache
+backend/.phpunit.cache/
+backend/auth.json
+
+# Local dataprocess noise (keep docs)
+quibro-remastered/public/dataprocess/*.xlsx
+quibro-remastered/public/dataprocess/*.py
+quibro-remastered/public/dataprocess/*.txt
+!quibro-remastered/public/dataprocess/VARIANTES_PRODUCTOS.md
